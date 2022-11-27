@@ -1,13 +1,14 @@
-// @import "./variables";
-// @import "./_mixins";
-// @import "./_button";
-
 #header {
     background-color: $secondary-color;
-    padding: 10px 0;
     .header {
-        @include flexBox(space-between, center);
-
+        @include flexBox(space-around, center);
+        padding: 10px 0;
+        position: fixed;
+        background-color: $secondary-color;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
         nav {
             ul {
                 @include flexBox(space-between);
@@ -36,9 +37,14 @@
             }
             .menu {
                 display: block;
+                cursor: pointer;
             }
         }
     }
+
+
+
+    
     #header-banner{
         background-color: $secondary-color;
         .header-banner{
@@ -47,7 +53,7 @@
                 font-weight: 800;
                 text-align: center;
                 color: $color-white;
-                padding-top: 96px;
+                padding-top: 130px;
             }
             .textp{
                 max-width: 50%;
@@ -58,7 +64,7 @@
                     color: $color-white;
                     text-align: center;
                     margin-top: 24px;
-                    padding-bottom: 66px;
+                    padding-bottom: 100px;
                 }
             }
             

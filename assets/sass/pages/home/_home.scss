@@ -10,7 +10,7 @@
             .image {
                 margin: 0 auto;
                 position: relative;
-                background-image: url("../../../images/keyboard.svg");
+                background-image: url("../images/keyboard.svg");
                 width: 1170px;
                 height: 720px;
                 background-size: cover;
@@ -257,6 +257,7 @@
         @include flexBox();
         margin-top: 98px;
         gap: 10px;
+        padding-bottom: 80px;
         button {
             width: 48px;
             height: 48px;

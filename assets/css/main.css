@@ -186,12 +186,18 @@ body {
 
 #header {
   background-color: #312B49;
-  padding: 10px 0;
 }
 #header .header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
+  padding: 10px 0;
+  position: fixed;
+  background-color: #312B49;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
 }
 #header .header nav ul {
   display: flex;
@@ -215,6 +221,7 @@ body {
   }
   #header .header .menu {
     display: block;
+    cursor: pointer;
   }
 }
 #header #header-banner {
@@ -225,7 +232,7 @@ body {
   font-weight: 800;
   text-align: center;
   color: #fff;
-  padding-top: 96px;
+  padding-top: 130px;
 }
 #header #header-banner .header-banner .textp {
   max-width: 50%;
@@ -237,7 +244,7 @@ body {
   color: #fff;
   text-align: center;
   margin-top: 24px;
-  padding-bottom: 66px;
+  padding-bottom: 100px;
 }
 #header #section1 {
   background-color: #FDF0E9;
@@ -291,13 +298,11 @@ body {
   margin-top: 60px;
 }
 #section2 .container .umumi .sol h2 {
-  font-family: Epilogue;
   font-weight: 800;
   color: white;
 }
 #section2 .container .umumi .sol p {
   color: white;
-  font-family: Epilogue;
   margin-top: 30px;
 }
 #section2 .container .umumi .sol button {
@@ -306,6 +311,15 @@ body {
   font-weight: 900;
   margin-top: 50px;
 }
+#section2 .container .umumi .sag {
+  margin-left: 300px;
+}
+@media only screen and (max-width: 992px) {
+  #section2 .container .umumi .sag {
+    margin-left: 0;
+    margin-top: 40px;
+  }
+}
 @media only screen and (max-width: 992px) {
   #section2 .umumi {
     display: block;
@@ -313,6 +327,7 @@ body {
   }
   #section2 .sol {
     width: 100%;
+    padding-bottom: 40px;
   }
   #section2 .img {
     width: 100%;
@@ -391,7 +406,8 @@ body {
 }
 #footer .footer .footer-copyright .terms-privacy ul {
   display: flex;
-  column-gap: 68px;
+  -moz-column-gap: 68px;
+       column-gap: 68px;
 }
 #footer .footer .footer-copyright .terms-privacy ul li a {
   color: #391400;
@@ -415,7 +431,7 @@ body {
 #section1 .center .center-first .image {
   margin: 0 auto;
   position: relative;
-  background-image: url("../../../images/keyboard.svg");
+  background-image: url("../images/keyboard.svg");
   width: 1170px;
   height: 720px;
   background-size: cover;
@@ -633,6 +649,7 @@ body {
   align-items: center;
   margin-top: 98px;
   gap: 10px;
+  padding-bottom: 80px;
 }
 #section2 .btns button {
   width: 48px;
