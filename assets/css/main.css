@@ -320,6 +320,9 @@ body {
     margin-top: 40px;
   }
 }
+#section2 .container .umumi .sag .img img {
+  width: 100%;
+}
 @media only screen and (max-width: 992px) {
   #section2 .umumi {
     display: block;
